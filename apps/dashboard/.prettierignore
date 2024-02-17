@@ -1,0 +1,5 @@
+package.json
+.next
+public/
+.turbo
+.prettierignore

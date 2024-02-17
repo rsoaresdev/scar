@@ -1,0 +1,30 @@
+{
+ "name": "@scar/config",
+ "version": "1.0.0",
+ "description": "Scar shared config for all packages and projects",
+ "exports": {
+  ".": "./index.js",
+  "./bot": "./configs/bot.js",
+  "./dashboard": "./configs/dashboard.js",
+  "./debugger": "./configs/debugger.js",
+  "./global": "./configs/global.js",
+  "./permissions": "./configs/permissions.js"
+ },
+ "type": "module",
+ "scripts": {
+  "format": "prettier . --write --cache --ignore-unknown",
+  "format:check": "prettier . --check --cache",
+  "lint": "eslint .",
+  "lint:fix": "eslint . --fix"
+ },
+ "dependencies": {
+  "discord-api-types": "0.37.70",
+  "dotenv": "16.4.4"
+ },
+ "keywords": [
+  "config"
+ ],
+ "author": "SirRamboia",
+ "license": "MIT",
+ "packageManager": "pnpm@8.15.3"
+}

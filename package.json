@@ -1,0 +1,49 @@
+{
+  "name": "@scar/monorepo",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Monorepo for Scar",
+  "scripts": {
+    "dev": "dotenv -- turbo run dev --color",
+    "build": "dotenv -- turbo run build --color",
+    "deploy": "dotenv -- turbo run deploy --color",
+    "analyze": "dotenv -- turbo run analyze --color",
+    "lint": "turbo run lint --color",
+    "lint:fix": "turbo run lint:fix --color",
+    "format": "turbo run format --color",
+    "format:check": "turbo run format:check --color",
+    "prisma:generate": "dotenv -- turbo run prisma:generate --color --filter=database",
+    "prisma:migrate": "dotenv -- turbo run prisma:migrate --color --filter=database",
+    "prisma:format": "dotenv -- turbo run prisma:format --color --filter=database",
+    "prisma:seed": "dotenv -- turbo run prisma:seed --color --filter=database"
+  },
+  "dependencies": {
+    "@prisma/client": "^5.9.1",
+    "@prisma/extension-accelerate": "^0.6.3",
+    "dotenv-cli": "7.3.0",
+    "sharp": "0.33.2",
+    "turbo": "1.12.4"
+  },
+  "devDependencies": {
+    "@igorkowalczyk/eslint-config": "2.2.0",
+    "@igorkowalczyk/prettier-config": "2.2.0",
+    "eslint": "8.56.0",
+    "eslint-plugin-turbo": "1.12.4",
+    "prettier": "3.2.5"
+  },
+  "engines": {
+    "node": ">=21.x"
+  },
+  "author": "SirRamboia",
+  "license": "MIT",
+  "homepage": "https://scarbot.com",
+  "keywords": [
+    "node",
+    "discord",
+    "scar",
+    "bot",
+    "discord-bot"
+  ],
+  "packageManager": "pnpm@8.15.3"
+}
