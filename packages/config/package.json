@@ -18,13 +18,12 @@
   "lint:fix": "eslint . --fix"
  },
  "dependencies": {
-  "discord-api-types": "0.37.70",
-  "dotenv": "16.4.4"
+  "discord-api-types": "0.37.76",
+  "dotenv": "16.4.5"
  },
  "keywords": [
   "config"
  ],
  "author": "SirRamboia",
- "license": "MIT",
- "packageManager": "pnpm@8.15.3"
+ "license": "MIT"
 }
