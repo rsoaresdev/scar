@@ -1,44 +1,48 @@
 {
-  "name": "@scar/monorepo",
-  "version": "0.0.0",
-  "private": true,
-  "type": "module",
-  "description": "Monorepo for Scar",
-  "scripts": {
-    "dev": "dotenv -- turbo run dev --color",
-    "build": "dotenv -- turbo run build --color",
-    "deploy": "dotenv -- turbo run deploy --color",
-    "analyze": "dotenv -- turbo run analyze --color",
-    "lint": "turbo run lint --color",
-    "lint:fix": "turbo run lint:fix --color",
-    "format": "turbo run format --color",
-    "format:check": "turbo run format:check --color",
-    "prisma:generate": "dotenv -- turbo run prisma:generate --color --filter=database",
-    "prisma:migrate": "dotenv -- turbo run prisma:migrate --color --filter=database",
-    "prisma:format": "dotenv -- turbo run prisma:format --color --filter=database",
-    "prisma:seed": "dotenv -- turbo run prisma:seed --color --filter=database"
-  },
-  "dependencies": {
-    "@prisma/client": "^5.11.0",
-    "@prisma/extension-accelerate": "^1.0.0",
-    "dotenv-cli": "7.4.1",
-    "turbo": "1.10.4"
-  },
-  "devDependencies": {
-    "@igorkowalczyk/eslint-config": "2.2.0",
-    "@igorkowalczyk/prettier-config": "2.2.0",
-    "eslint": "8.57.0",
-    "eslint-plugin-turbo": "1.13.0",
-    "prettier": "3.2.5"
-  },
-  "author": "SirRamboia",
-  "license": "MIT",
-  "homepage": "https://scarbot.com",
-  "keywords": [
-    "node",
-    "discord",
-    "scar",
-    "bot",
-    "discord-bot"
-  ]
+ "name": "@scar/monorepo",
+ "version": "0.0.0",
+ "private": true,
+ "type": "module",
+ "description": "Monorepo for Scar",
+ "scripts": {
+  "dev": "dotenv -- turbo run dev --color",
+  "build": "dotenv -- turbo run build --color",
+  "deploy": "dotenv -- turbo run deploy --color",
+  "analyze": "dotenv -- turbo run analyze --color",
+  "lint": "turbo run lint --color",
+  "lint:fix": "turbo run lint:fix --color",
+  "format": "turbo run format --color",
+  "format:check": "turbo run format:check --color",
+  "prisma:generate": "dotenv -- turbo run prisma:generate --color --filter=database",
+  "prisma:migrate": "dotenv -- turbo run prisma:migrate --color --filter=database",
+  "prisma:format": "dotenv -- turbo run prisma:format --color --filter=database",
+  "prisma:seed": "dotenv -- turbo run prisma:seed --color --filter=database"
+ },
+ "dependencies": {
+  "@prisma/client": "^5.11.0",
+  "@prisma/extension-accelerate": "^1.0.0",
+  "dotenv-cli": "7.4.1",
+  "turbo": "1.10.4"
+ },
+ "devDependencies": {
+  "@igorkowalczyk/eslint-config": "2.2.0",
+  "@igorkowalczyk/prettier-config": "2.2.0",
+  "eslint": "8.57.0",
+  "eslint-plugin-turbo": "1.13.0",
+  "prettier": "3.2.5"
+ },
+ "author": "SirRamboia",
+ "license": "MIT",
+ "homepage": "https://scarbot.com",
+ "keywords": [
+  "node",
+  "discord",
+  "scar",
+  "bot",
+  "discord-bot"
+ ],
+ "workspaces": [
+  "packages/*",
+  "apps/*"
+ ]
 }
