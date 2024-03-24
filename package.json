@@ -43,11 +43,11 @@
  ],
  "engines": {
   "node": ">=18",
-  "pnpm": ">=8"
+  "pnpm": ">=6"
  },
  "workspaces": [
   "packages/*",
   "apps/*"
  ],
- "packageManager": "pnpm@8.15.5"
+ "packageManager": "pnpm@6.35.1"
 }
